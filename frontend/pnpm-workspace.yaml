@@ -1,0 +1,26 @@
+minimumReleaseAgeExclude:
+  - '@ai-sdk/gateway@4.0.137'
+  - '@ai-sdk/mcp@2.0.92'
+  - '@ai-sdk/react@4.0.168'
+  - '@tailwindcss/node@4.3.5'
+  - '@tailwindcss/oxide-android-arm64@4.3.5'
+  - '@tailwindcss/oxide-darwin-arm64@4.3.5'
+  - '@tailwindcss/oxide-darwin-x64@4.3.5'
+  - '@tailwindcss/oxide-freebsd-x64@4.3.5'
+  - '@tailwindcss/oxide-linux-arm-gnueabihf@4.3.5'
+  - '@tailwindcss/oxide-linux-arm64-gnu@4.3.5'
+  - '@tailwindcss/oxide-linux-arm64-musl@4.3.5'
+  - '@tailwindcss/oxide-linux-x64-gnu@4.3.5'
+  - '@tailwindcss/oxide-linux-x64-musl@4.3.5'
+  - '@tailwindcss/oxide-wasm32-wasi@4.3.5'
+  - '@tailwindcss/oxide-win32-arm64-msvc@4.3.5'
+  - '@tailwindcss/oxide-win32-x64-msvc@4.3.5'
+  - '@tailwindcss/oxide@4.3.5'
+  - '@tailwindcss/vite@4.3.5'
+  - '@tanstack/query-core@5.107.1'
+  - '@tanstack/react-query@5.107.1'
+  - ai@7.0.164
+  - i18next@27.0.0
+  - react-i18next@18.0.0
+  - react-resizable-panels@4.19.1
+  - tailwindcss@4.3.5

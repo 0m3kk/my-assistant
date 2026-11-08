@@ -1,0 +1,227 @@
+{
+  "app": {
+    "name": "Assistant",
+    "tagline": "Your AI assistant"
+  },
+  "auth": {
+    "login": "Log in",
+    "register": "Sign up",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "noAccount": "No account yet?",
+    "hasAccount": "Already have an account?",
+    "loginFailed": "Login failed",
+    "registerFailed": "Sign up failed",
+    "registerDisabled": "Sign-up is disabled. Ask an admin to create your account."
+  },
+  "chat": {
+    "newChat": "New chat",
+    "placeholder": "Ask anything…",
+    "send": "Send",
+    "stop": "Stop",
+    "empty": {
+      "title": "What can I help with?",
+      "subtitle": "Ask a question or use one of the suggestions below."
+    },
+    "working": "Working…",
+    "runningInBackground": "Running in background…",
+    "cancel": "Cancel",
+    "noModels": "No models configured — ask an admin to add a provider and model.",
+    "model": "Model",
+    "agent": "Agent",
+    "effort": {
+      "title": "Reasoning effort",
+      "default": "Default",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "xhigh": "X-High"
+    },
+    "reasoning": {
+      "thinking": "Thinking…",
+      "thought": "Thought for a moment"
+    },
+    "copy": "Copy response",
+    "copied": "Copied",
+    "copyFailed": "Could not copy to clipboard",
+    "switch": {
+      "to": "Switched to {{name}}",
+      "returned": "Back to {{name}}"
+    },
+    "context": {
+      "title": "Context usage",
+      "used": "Context: {{used}} tokens",
+      "usedOf": "Context: {{used}} / {{total}} ({{percent}}%)",
+      "output": "Output: {{tokens}}",
+      "totalPrompt": "Prompt: {{tokens}}"
+    },
+    "attach": "Attach files",
+    "generateTitle": "Title",
+    "titleGenerated": "Title generated",
+    "uploading": "Uploading…",
+    "uploadFailed": "Upload failed",
+    "removeAttachment": "Remove attachment",
+    "download": "Download",
+    "workspace": {
+      "title": "Workspace",
+      "subtitle": "Files the agent created and used in this conversation.",
+      "empty": "No files in the workspace yet.",
+      "sendFirst": "Workspace files appear here after the first message.",
+      "loadFailed": "Could not load workspace files.",
+      "downloadFailed": "Download failed"
+    },
+    "mermaid": {
+      "title": "Diagram",
+      "expand": "Click to enlarge",
+      "rendering": "Rendering diagram…",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "reset": "Reset zoom",
+      "close": "Close"
+    },
+    "suggest": {
+      "time": "What time is it right now?"
+    }
+  },
+  "approval": {
+    "title": "Approval required",
+    "description": "The agent wants to run the following action. Review it before allowing.",
+    "input": "Input",
+    "approve": "Approve",
+    "deny": "Deny",
+    "approved": "Approved",
+    "denied": "Denied",
+    "pending": "Awaiting approval",
+    "outOfRoot": "This call wants to access a path outside the tool's configured scope.",
+    "allowOnce": "Allow once",
+    "allowAndPropose": "Allow + propose update"
+  },
+  "tool": {
+    "ran": "Ran",
+    "running": "Running",
+    "failed": "Failed to run",
+    "denied": "Denied",
+    "output": "Output",
+    "input": "Input",
+    "sources": "Sources",
+    "noResults": "No results"
+  },
+  "feedback": {
+    "helpful": "Helpful",
+    "notHelpful": "Not helpful",
+    "note": "Add a note",
+    "placeholder": "What should change?",
+    "save": "Save",
+    "saved": "Feedback saved"
+  },
+  "studio": {
+    "title": "Studio",
+    "subtitle": "Meta-agents propose; you review and apply.",
+    "pendingProposals": "Pending proposals",
+    "review": "Review",
+    "noProposals": "No pending proposals.",
+    "openFeedback": "Open feedback",
+    "improve": "Improve",
+    "noFeedback": "No open feedback.",
+    "hint": "Nothing is saved until you apply a proposal. Agents cannot build, apply, or edit definitions directly."
+  },
+  "sidebar": {
+    "conversations": "Conversations",
+    "settings": "Settings",
+    "admin": "Admin",
+    "studio": "Studio",
+    "logout": "Log out",
+    "deleteConfirm": "Delete this conversation?",
+    "delete": "Delete",
+    "generateTitle": "Title",
+    "titleGenerated": "Title generated",
+    "running": "Running",
+    "stopAll": "Stop all",
+    "stopAllConfirm": "Stop all running conversations?",
+    "stopAllDescription": "{{count}} conversation(s) are still running. Stop them?",
+    "stopAllDone": "Stopped running conversations",
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "fontSize": "Font size",
+    "fontSmall": "Small",
+    "fontMedium": "Medium",
+    "fontLarge": "Large",
+    "fontXLarge": "Extra Large",
+    "language": "Language",
+    "titleModel": "Conversation title model",
+    "titleModelDefault": "Default model",
+    "titleModelHint": "Model used to generate short conversation titles after the first reply.",
+    "saved": "Preferences saved"
+  },
+  "profile": {
+    "title": "Profile",
+    "displayName": "Display name",
+    "avatarUrl": "Avatar URL",
+    "avatarUrlHint": "Paste an image URL. Leave empty to use your initials.",
+    "save": "Save",
+    "saved": "Profile updated"
+  },
+  "admin": {
+    "title": "Administration",
+    "providers": "Providers",
+    "models": "Models",
+    "agents": "Agents",
+    "tools": "Tools",
+    "secrets": "Secrets",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirmDelete": "Delete {{name}}? This cannot be undone.",
+    "reasoningEffort": "Reasoning effort",
+    "discover": {
+      "button": "Discover",
+      "title": "Discover models from provider",
+      "loading": "Querying the provider…",
+      "failed": "Discovery failed",
+      "empty": "The provider returned no models. Check the base URL and API key.",
+      "allConfigured": "All of this provider's models are already configured.",
+      "addSelected": "Add {{count}} selected"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "create": "Create",
+    "rename": "Rename",
+    "delete": "Delete",
+    "folder": {
+      "name": "Folder name",
+      "new": "New folder",
+      "newShort": "New",
+      "rename": "Rename folder",
+      "delete": "Delete folder",
+      "deleteConfirm": "Delete this folder?",
+      "deleteDescription": "Items in this folder will be moved to Ungrouped.",
+      "ungrouped": "Ungrouped",
+      "builtin": "Built-in",
+      "move": "Move",
+      "moveTo": "Move to folder",
+      "created": "Folder created",
+      "renamed": "Folder renamed",
+      "deleted": "Folder deleted",
+      "collapse": "Collapse folder",
+      "expand": "Expand folder",
+      "selectHint": "New chats will be created in this folder",
+      "empty": "No items in this folder."
+    }
+  },
+  "confirm": {
+    "delete": "Delete",
+    "cancel": "Cancel"
+  }
+}

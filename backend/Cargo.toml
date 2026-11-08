@@ -1,0 +1,79 @@
+[package]
+name = "assistant"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "AI assistant backend — Axum + SQLx + Postgres"
+
+[[bin]]
+name = "assistant"
+path = "src/main.rs"
+
+[dependencies]
+# Web framework + middleware
+axum = { version = "0.8", features = ["multipart"] }
+tower = "0.5"
+tower-http = { version = "0.6", features = ["trace", "cors", "fs", "request-id", "set-header", "util", "catch-panic"] }
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["io"] }
+futures = "0.3"
+async-trait = "0.1"
+
+# Object storage (S3 / MinIO) for the pluggable Storage backend
+object_store = { version = "0.12", features = ["aws"] }
+
+# File type detection (uploads, artifacts)
+mime_guess = "2"
+bytes = "1"
+globset = "0.4"
+percent-encoding = "2"
+
+# Database
+sqlx = { version = "0.8", features = ["runtime-tokio", "tls-rustls", "postgres", "uuid", "chrono", "json"] }
+
+# Serialization & validation
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+validator = { version = "0.20", features = ["derive"] }
+clap = { version = "4", features = ["derive"] }
+
+# Auth & crypto
+jsonwebtoken = "9"
+argon2 = "0.5"
+aes-gcm = "0.10"
+sha2 = "0.10"
+hex = "0.4"
+base64 = "0.22"
+
+# HTTP client (LLM providers, http tools)
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "rustls-tls"] }
+eventsource-stream = "0.2"
+
+# WASM tool runtime (sandboxed programmable tools)
+wasmtime = "27"
+wasmtime-wasi = "27"
+
+# Observability & errors
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+thiserror = "2"
+
+# Concurrency & utils
+dashmap = "6"
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+dotenvy = "0.15"
+
+# CLI (add-user masked password prompt)
+dialoguer = "0.11"
+
+[dev-dependencies]
+wiremock = "0.6"
+tempfile = "3"
+wat = "1"
+
+[profile.release]
+lto = "thin"
+strip = true

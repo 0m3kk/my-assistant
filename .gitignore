@@ -1,0 +1,32 @@
+# Rust / backend
+backend/target/
+backend/.sqlx/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Data
+data/
+*.sqlite*
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Coverage / logs
+*.log
+coverage/
+deploy/.env
+.zcode
+.commandcode

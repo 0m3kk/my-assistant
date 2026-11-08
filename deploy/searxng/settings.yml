@@ -1,0 +1,13 @@
+# Minimal SearXNG config for the builtin `web_search` tool.
+# The secret key comes from SEARXNG_SECRET (docker-compose env), not this file.
+use_default_settings: true
+
+server:
+  # Internal calls come from the app container; bot detection would block them.
+  limiter: false
+  image_proxy: false
+
+search:
+  formats:
+    - html
+    - json
